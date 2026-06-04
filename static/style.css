@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    background: #334155;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background: #22c55e;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #16a34a;
+}
+
+.subtitle {
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+.warning {
+    color: #ef4444;
+    font-size: 14px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 8px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.download {
+    color: #22c55e;
+}
+
+.delete {
+    color: #ef4444;
+}
+
+.card p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+}

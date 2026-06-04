@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Merge History</h1>
+    <div class="container">
+        <a href="/">Back to Home</a>
+        {% for h in history %}
+        <div class="card">
+            <p><b>{{ h.filename }}</b></p>
+            <p>{{ h.timestamp }}</p>
+            <a href="{{ url_for('static', filename=h.filename) }}" download>
+                Download
+            </a>
+            <a class="delete"
+               href="/delete/{{ h.id }}"
+               onclick="return confirm('Delete this record?')">
+               Delete
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
